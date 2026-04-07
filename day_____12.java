@@ -93,8 +93,8 @@ public class day_____12 {
     
         public boolean fits() {
             // test 1: hoeveel presents passen er in totaal?
-            var horizontal = width % 3;
-            var vertical = height % 3;
+            var horizontal = width / 3;
+            var vertical = height / 3;
             var total = horizontal * vertical;
             var nrOfPresents = numbers.stream().mapToInt(i -> i).sum();
             if (total >= nrOfPresents) {
